@@ -4,7 +4,7 @@ import Menu from '@/components/menu/Menu'
 import Image from 'next/image'
 import Comments from '@/components/comments/Comments'
 
-const page = () => {
+const singlePage = () => {
     return (
         <div className={styles.container}>
             <div className={styles.infoContainer}>
@@ -43,4 +43,4 @@ const page = () => {
     )
 }
 
-export default page
+export default singlePage
