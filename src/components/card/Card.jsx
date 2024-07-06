@@ -3,16 +3,16 @@ import styles from './card.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const Card = ({item, id}) => {
+const Card = ({item}) => {
     return (
-        <div className={styles.container} key={id}>
+        <div className={styles.container} key={item.id}>
             <div className={styles.imageContainer}>
                 <Image src="/ufrjFACC.png" alt='' fill className={styles.image} />
             </div>
             <div className={styles.textContainer}>
                 <div className={styles.detail}>
-                    <span className={styles.date}>12.02.1999 - </span>
-                    <span className={styles.category}>FaCC</span>
+                    <span className={styles.date}>{item.createdAt.substring(0,10)} - </span>
+                    <span className={styles.category}>{item.catSlug}</span>
                 </div>
                 <Link href="/">
                     <h1>{item.title}</h1>
