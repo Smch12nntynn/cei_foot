@@ -8,9 +8,9 @@ const blogPage = ({ searchParams }) => {
     const page = parseInt(searchParams.page) || 1;
     const { cat } = searchParams;
 
-    console.log(searchParams)
-    console.log(cat)
-    console.log(page)
+    // console.log(searchParams)
+    // console.log(cat)
+    // console.log(page)
 
     return (
         <div className={styles.container}>
