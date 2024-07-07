@@ -62,7 +62,7 @@
     margin-top: 60px;
 }
 
-.description p{
+.description {
     font-style: 20px;
     font-weight: 300;
     margin-bottom: 20px;
@@ -92,7 +92,7 @@
         font-style: 36px;
     }
 
-    .description p{
+    .description {
         font-size: 18px;
     }
 }
