@@ -5,7 +5,6 @@ import Image from 'next/image'
 
 
 const Card = ({item}) => {
-    // console.log(item)
     return (
         <div className={styles.container} key={item.id}>
             <div className={styles.imageContainer}>

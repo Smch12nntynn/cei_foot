@@ -10,7 +10,17 @@ const Featured = () => {
             </h1>
             <div className={styles.post}>
                 <div className={styles.imgContainer}>
-                    <Image src="/ufrjFACC.png" alt='' fill/>
+                        <Image
+                            src="/ufrjFACC.png"
+                            alt=''
+                            fill
+                            sizes="100vw"
+                            style={{
+                                objectFit: 'contain',
+                            }}
+                            priority
+                            quality={80}
+                        />
                 </div>
                 <div className={styles.textContainer}>
                     <h1 className={styles.postTitle}> Lorem ipsum dolor sit, amet consectetur</h1>
